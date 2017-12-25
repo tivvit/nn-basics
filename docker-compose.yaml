@@ -1,0 +1,8 @@
+version: '2'
+services:
+  nb:
+    image: tensorflow/tensorflow:1.4.1-py3
+    volumes:
+    - "$PWD/nb:/notebooks"
+    ports:
+    - "8888:8888"
